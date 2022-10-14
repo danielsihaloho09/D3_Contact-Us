@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221014 22:37:06.092" rpa="false" schemaversion="3">
+<suite id="s1" name="ContactUs" source="C:\Users\DANIEL\Desktop\Automation\TC\ContactUs.robot">
+<test id="s1-t1" name="Contact Us Test" line="11">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221014 22:37:06.263" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20221014 22:37:06.263" endtime="20221014 22:37:23.584"/>
+</kw>
+<kw name="Failed Contact Us">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@title="Contact Us"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221014 22:37:23.586" level="INFO">Clicking element 'xpath=//*[@title="Contact Us"]'.</msg>
+<status status="PASS" starttime="20221014 22:37:23.585" endtime="20221014 22:37:34.121"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="submitMessage"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221014 22:37:34.121" level="INFO">Clicking element 'xpath=//*[@id="submitMessage"]'.</msg>
+<status status="PASS" starttime="20221014 22:37:34.121" endtime="20221014 22:37:44.799"/>
+</kw>
+<status status="PASS" starttime="20221014 22:37:23.585" endtime="20221014 22:37:44.799"/>
+</kw>
+<kw name="Check Contact Us">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@title="Contact Us"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221014 22:37:44.800" level="INFO">Clicking element 'xpath=//*[@title="Contact Us"]'.</msg>
+<status status="PASS" starttime="20221014 22:37:44.800" endtime="20221014 22:37:53.474"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>xpath=//*[@id="id_contact"]</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20221014 22:37:53.474" level="INFO">Selecting options from selection list 'xpath=//*[@id="id_contact"]' by index 2.</msg>
+<status status="PASS" starttime="20221014 22:37:53.474" endtime="20221014 22:37:53.630"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="email"]</arg>
+<arg>danielsihaloho@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221014 22:37:53.630" level="INFO">Typing text 'danielsihaloho@gmail.com' into text field 'xpath=//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20221014 22:37:53.630" endtime="20221014 22:37:53.733"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="id_order"]</arg>
+<arg>Free</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221014 22:37:53.733" level="INFO">Typing text 'Free' into text field 'xpath=//*[@id="id_order"]'.</msg>
+<status status="PASS" starttime="20221014 22:37:53.733" endtime="20221014 22:37:53.804"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="message"]</arg>
+<arg>Oke,sudah sesuai dengan yang diinginkan</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221014 22:37:53.804" level="INFO">Typing text 'Oke,sudah sesuai dengan yang diinginkan' into text field 'xpath=//*[@id="message"]'.</msg>
+<status status="PASS" starttime="20221014 22:37:53.804" endtime="20221014 22:37:53.892"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="submitMessage"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221014 22:37:53.893" level="INFO">Clicking element 'xpath=//*[@id="submitMessage"]'.</msg>
+<status status="PASS" starttime="20221014 22:37:53.892" endtime="20221014 22:37:58.462"/>
+</kw>
+<status status="PASS" starttime="20221014 22:37:44.800" endtime="20221014 22:37:58.463"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221014 22:37:58.464" endtime="20221014 22:38:00.678"/>
+</kw>
+<status status="PASS" starttime="20221014 22:37:06.262" endtime="20221014 22:38:00.679"/>
+</test>
+<status status="PASS" starttime="20221014 22:37:06.093" endtime="20221014 22:38:00.680"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="ContactUs">ContactUs</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
